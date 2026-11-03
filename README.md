@@ -210,9 +210,9 @@ env_key = "OPENAI_API_KEY"                                   # in place of requi
 The provider changes with it: an API key is accepted at `openai`, which points at
 `api.openai.com`.
 
-### 3. OpenCode
+### 3. OpenCode 2.x
 
-OpenCode 2 reads its base URL from `opencode.json` rather than the environment, ending in `/v1`.
+OpenCode 2.x reads its base URL from `opencode.json` rather than the environment, ending in `/v1`.
 `cs-vcr config opencode` prints the block for one cassette and one provider:
 
 ```bash

@@ -210,9 +210,9 @@ env_key = "OPENAI_API_KEY"                                   # in place of requi
 The provider changes with it: an API key is accepted at `openai`, which points at
 `api.openai.com`.
 
-### 3. OpenCode
+### 3. OpenCode 2.x
 
-OpenCode 2 reads its base URL from `opencode.json` rather than the environment, ending in `/v1`.
+OpenCode 2.x reads its base URL from `opencode.json` rather than the environment, ending in `/v1`.
 `cs-vcr config opencode` prints the block for one cassette and one provider:
 
 ```bash
@@ -220,8 +220,8 @@ cs-vcr record
 
 # Terminal 2: paste the printed block into the project's opencode.json, then run
 # OpenCode on a private server of its own. One session per cassette.
-cs-vcr config opencode --cassette oc-anthropic --provider anthropic
-opencode run --standalone --model anthropic/claude-sonnet-5 "add a /version endpoint"
+cs-vcr config opencode --cassette oc-fireworks --provider fireworks
+opencode run --standalone --model fireworks-ai/accounts/fireworks/models/glm-5p3-flash "add a /version endpoint"
 ```
 
 Name the provider the model belongs to. `--standalone` is what makes the run use this shell's

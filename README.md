@@ -220,8 +220,8 @@ cs-vcr record
 
 # Terminal 2: paste the printed block into the project's opencode.json, then run
 # OpenCode on a private server of its own. One session per cassette.
-cs-vcr config opencode --cassette oc-anthropic --provider anthropic
-opencode run --standalone --model anthropic/claude-sonnet-5 "add a /version endpoint"
+cs-vcr config opencode --cassette oc-fireworks --provider fireworks
+opencode run --standalone --model fireworks-ai/accounts/fireworks/models/glm-5p3-flash "add a /version endpoint"
 ```
 
 Name the provider the model belongs to. `--standalone` is what makes the run use this shell's
